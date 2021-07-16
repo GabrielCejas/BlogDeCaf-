@@ -1,0 +1,263 @@
+:root{
+    --fuenteTitulos: 'Roboto', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --colorPrimario: #784d3c;
+    --blanco:#fff;
+    --grizBlanco:#f5f5f5;
+    --negro:#000000;
+    --grisClaro:#e1e1e1;
+    --marronOscuro:#4e342e;
+    --marronOscuroPlus:#260e04;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:var(var(--fuenteParrafos));
+    font-size: 1.9rem;
+    line-height: 2;
+}
+
+/* Globales */
+
+.contenedor{
+    max-width: 180rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    font-family: var(--fuenteTitulos);
+    line-height: 1.2 ;
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 3.7rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/* Header */
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header{
+    background-image: url(../img/banner.jpg);
+}
+.header{
+    height:65rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+.header__texto{
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem;
+}
+
+/* Barra de navegacion */
+
+@media (min-width: 769px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barraNavegacion{
+        display: flex;
+        gap: 2rem;
+    }
+    .header__texto{
+        margin-top: 18rem;
+    }
+    .main-contenedor{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+    }
+    .boton{
+        display: inline-block;
+    }
+
+    /* Sobre Nostros */
+    .sobreNosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+    }
+    /* Seccion Cursos */
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;
+    }
+}
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: normal;
+}
+.logo__nombre:hover{
+    color: var(--colorPrimario);
+    font-size: 4.6rem;
+}
+.logo__bold{
+    font-weight: 700;
+}
+.barraNavegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blanco);
+}
+.barraNavegacion__enlace:hover{
+    font-size: 2.1rem;
+    color: var(--colorPrimario);
+}
+.entradaBlog{
+    border-bottom: .2rem solid var(--grisClaro);
+    margin-bottom: 2rem;
+}
+.entradaBlog:last-of-type{
+    border: none;
+    margin-bottom:0;
+}
+.boton{
+    font-family: var(--fuenteTitulos);
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.75);
+}
+.boton:hover{
+    background-color:var(--colorPrimario);
+    cursor: pointer;
+}
+.boton--primario{
+    display: block;
+    background-color: var(--marronOscuro);
+    padding: .6rem;
+}
+.boton--secundario{
+    background-color: var(--marronOscuroPlus);
+    font-size: 1.4rem;
+    padding: .6rem 1.2rem;
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    border-bottom: .2rem solid var(--grisClaro);
+}
+.widget-curso:last-of-type{
+    border: none;
+}
+.widget-curso__label, .curso__label{
+    font-family: var(--fuenteTitulos);
+    font-weight: 700;
+}
+.widget-curso__info, .curso__info{
+    font-weight: 200;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--marronOscuroPlus);
+    height:auto;
+    padding: 1.3rem;
+}
+ion-icon {
+    color: var(--blanco);
+    font-size: 3rem;
+    --ionicon-stroke-width: 4rem;
+}
+@media (max-width: 541px){
+    ion-icon{
+    padding: 2rem 45%;
+    }
+}
+
+/* Sobre Nosotros */
+.sobreNostros__texto{
+    text-align: justify;
+}
+
+/* Seccion Cursos */
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grisClaro);
+}
+.curso:last-of-type{
+    border: none;
+}
+.curso__descripcion{
+    text-align: justify;
+}
+
+/* Seccion de Contacto */
+
+.contacto__img{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+.contacto__formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto;
+    width: 90%;
+    border-radius: 1rem;
+    padding: 4rem;
+    margin-bottom: .5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 8rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--grisClaro);
+    border-radius: 1rem;
+}

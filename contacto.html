@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafe, blog de Café, Cursos de Cafe">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Roboto:wght@300&display=swap" rel="hoja de estilo">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Blog de Café</title>
+</head>
+<body class="contenedor">
+    <header class="header">
+        <nav class="contenedor barra">
+            <a  class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+            </a>
+            <div class="barraNavegacion">
+                <a class="barraNavegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="barraNavegacion__enlace" href="cursos.html">Cursos</a>
+                <a class="barraNavegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+        <section class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </section>
+    </header>
+    <main class="main contacto">
+        <h3 class="centrar-texto contacto__texto">Contacto</h3>
+        <section class="contacto__img"></section>
+        <form class="contacto__formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="apellido">Apellido</label>
+                <input class="campo__field" type="text" placeholder="Apellido" id="apellido">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field" name="Mensaje" id="mensaje" cols="50" rows="10"></textarea>
+            </div>
+            <button class="boton boton--secundario">Enviar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <nav class="contenedor barra">
+                <a  class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <ion-icon name="cafe-outline"></ion-icon>
+                <div class="barraNavegacion">
+                    <a class="barraNavegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="barraNavegacion__enlace" href="cursos.htm">Cursos</a>
+                    <a class="barraNavegacion__enlace" href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
